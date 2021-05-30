@@ -64,9 +64,9 @@ struct DiaryScreen: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView {
                 // TODO: add filter dropdown here
-                ScrollView {
+                VStack {
                     ForEach(dayEntries, id: \.self) { dayEntry in
                         DayEntryView(dayEntry: dayEntry)
                     }

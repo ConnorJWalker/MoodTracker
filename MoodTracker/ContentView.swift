@@ -39,7 +39,6 @@ struct ContentView: View {
                     .tag(5)
             }
             
-            Spacer()
             TabBarView(selectedTab: $selectedTab)
         }
     }

@@ -14,7 +14,6 @@ struct TabBarView: View {
     
     var body: some View {
         VStack {
-            Spacer()
             HStack {
                 ForEach(0..<5) { i in
                     Spacer()
