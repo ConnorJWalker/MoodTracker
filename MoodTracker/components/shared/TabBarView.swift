@@ -23,7 +23,7 @@ struct TabBarView: View {
                         if i == 2 {
                             Image(systemName: tabBarIcons[i])
                                 .font(.system(size: 44, weight: .bold))
-                                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                                .foregroundColor(.accentColour)
                             Spacer()
                         }
                         else {

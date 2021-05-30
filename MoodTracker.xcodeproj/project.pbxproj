@@ -14,6 +14,7 @@
 		E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FA62662FD6D00E36691 /* Persistence.swift */; };
 		E43A9FAA2662FD6D00E36691 /* MoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FA82662FD6D00E36691 /* MoodTracker.xcdatamodeld */; };
 		E43A9FB52663064700E36691 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB42663064700E36691 /* TabBarView.swift */; };
+		E43A9FB72663177300E36691 /* colourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB62663177300E36691 /* colourExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E43A9FA92662FD6D00E36691 /* MoodTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodTracker.xcdatamodel; sourceTree = "<group>"; };
 		E43A9FAB2662FD6D00E36691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43A9FB42663064700E36691 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E43A9FB62663177300E36691 /* colourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E43A9FAB2662FD6D00E36691 /* Info.plist */,
 				E43A9FA82662FD6D00E36691 /* MoodTracker.xcdatamodeld */,
 				E43A9FA32662FD6D00E36691 /* Preview Content */,
+				E43A9FB62663177300E36691 /* colourExtension.swift */,
 			);
 			path = MoodTracker;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */,
+				E43A9FB72663177300E36691 /* colourExtension.swift in Sources */,
 				E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */,
 				E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */,
 				E43A9FB52663064700E36691 /* TabBarView.swift in Sources */,
