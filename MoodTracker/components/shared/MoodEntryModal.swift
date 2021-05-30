@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MoodEntryModal: View {
     @Binding var shouldShowModal: Bool
+    @State var shouldShowMore = false
     
     private let avaiableEmotions = ["Angry", "Sad", "Meh", "Happy", "Excited"]
     private let modalPadding: CGFloat = 15
@@ -52,6 +53,29 @@ struct MoodEntryModal: View {
                                 }
                             }
                             .padding(modalPadding)
+                            Divider()
+                            HStack {
+                                Button(action: { shouldShowMore.toggle() }, label: {
+                                    Text("Show \(shouldShowMore ? "Less" : "More")")
+                                        .frame(minWidth: 0, maxWidth: .infinity)
+                                })
+                                .padding([.leading, .trailing, .top], modalPadding / 2)
+                                .padding(.bottom, modalPadding)
+                                .foregroundColor(.black)
+                                
+                                Divider()
+                                
+                                Button(action: handleAddButtonClick, label: {
+                                    Text("Add")
+                                        .frame(minWidth: 0, maxWidth: .infinity)
+                                })
+                                .padding([.leading, .trailing, .top], modalPadding / 2)
+                                .padding(.bottom, modalPadding)
+                                .foregroundColor(.black)
+                            }
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .font(.callout)
                         }
                         .background(Color.white)
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .none, alignment: .leading)
@@ -60,6 +84,10 @@ struct MoodEntryModal: View {
                     .padding()
                 }
             })
+    }
+    
+    func handleAddButtonClick() {
+        // TODO: save changes
     }
 }
 
