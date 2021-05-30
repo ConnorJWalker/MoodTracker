@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TabView(selection: $selectedTab) {
-                Text("Diary Page")
+                DiaryScreen()
                     .tabItem {
                         Image(systemName: "book.closed")
                     }

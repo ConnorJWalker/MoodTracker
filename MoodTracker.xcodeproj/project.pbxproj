@@ -15,6 +15,7 @@
 		E43A9FAA2662FD6D00E36691 /* MoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FA82662FD6D00E36691 /* MoodTracker.xcdatamodeld */; };
 		E43A9FB52663064700E36691 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB42663064700E36691 /* TabBarView.swift */; };
 		E43A9FB72663177300E36691 /* colourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB62663177300E36691 /* colourExtension.swift */; };
+		E43A9FBA266318C500E36691 /* DiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB9266318C500E36691 /* DiaryScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E43A9FAB2662FD6D00E36691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43A9FB42663064700E36691 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		E43A9FB62663177300E36691 /* colourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourExtension.swift; sourceTree = "<group>"; };
+		E43A9FB9266318C500E36691 /* DiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		E43A9F9C2662FD6C00E36691 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E43A9FB82663188200E36691 /* screens */,
 				E43A9FB12663061300E36691 /* components */,
 				E43A9F9D2662FD6C00E36691 /* MoodTrackerApp.swift */,
 				E43A9F9F2662FD6C00E36691 /* ContentView.swift */,
@@ -95,6 +98,14 @@
 				E43A9FB42663064700E36691 /* TabBarView.swift */,
 			);
 			path = shared;
+			sourceTree = "<group>";
+		};
+		E43A9FB82663188200E36691 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				E43A9FB9266318C500E36691 /* DiaryScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43A9FBA266318C500E36691 /* DiaryScreen.swift in Sources */,
 				E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */,
 				E43A9FB72663177300E36691 /* colourExtension.swift in Sources */,
 				E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */,
