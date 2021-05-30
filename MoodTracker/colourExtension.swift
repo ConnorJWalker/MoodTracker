@@ -10,4 +10,5 @@ import SwiftUI
 extension Color {
     static let accentColour = Color("accentColour")
     static let accentColourOpacity = Color("accentColourOpacity")
+    static let textLight = Color("textLight")
 }

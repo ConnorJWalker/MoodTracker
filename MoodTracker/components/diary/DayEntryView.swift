@@ -27,6 +27,18 @@ struct DayEntryView: View {
                     MoodEntryView(moodEntry: dayEntry.moodEntries[i])
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .none, alignment: .leading)
                 }
+                HStack {
+                    Text("Today I Felt:")
+                        .font(.title2)
+                    Text(dayEntry.overallMood)
+                        .font(.callout)
+                        .foregroundColor(.textLight)
+                    Spacer()
+                }
+                Text(dayEntry.diary)
+                    .font(.callout)
+                    .foregroundColor(.textLight)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .none, alignment: .leading)
             }
         }
         .padding()
