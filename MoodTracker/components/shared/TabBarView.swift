@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabBarView: View {
     @Binding var selectedTab: Int
+    @Binding var shouldShowModal: Bool
     
     private let tabBarIcons = ["book.closed", "chart.pie", "plus.square.fill", "square.grid.3x3", "gearshape"]
     
@@ -32,6 +33,9 @@ struct TabBarView: View {
                             Spacer()
                         }
                     })
+                    .sheet(isPresented: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is Presented@*/.constant(false)/*@END_MENU_TOKEN@*/, content: {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Sheet Content")/*@END_MENU_TOKEN@*/
+                    })
                     Spacer()
                 }
             }
@@ -39,16 +43,20 @@ struct TabBarView: View {
     }
     
     private func handleTabClick(_ tabNumber: Int) {
-        // TODO: handle modal button click
+        if tabNumber != 2 {
+            selectedTab = tabNumber
+            return
+        }
         
-        selectedTab = tabNumber
+        shouldShowModal.toggle()
     }
 }
 
 struct TabBarView_Previews: PreviewProvider {
     @State static var tab = 0
+    @State static var shouldShowModal = false
     
     static var previews: some View {
-        TabBarView(selectedTab: $tab)
+        TabBarView(selectedTab: $tab, shouldShowModal: $shouldShowModal)
     }
 }

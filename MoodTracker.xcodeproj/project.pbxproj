@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41C51B02663F94700A9E391 /* MoodEntryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41C51AF2663F94700A9E391 /* MoodEntryModal.swift */; };
 		E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9F9D2662FD6C00E36691 /* MoodTrackerApp.swift */; };
 		E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9F9F2662FD6C00E36691 /* ContentView.swift */; };
 		E43A9FA22662FD6D00E36691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43A9FA12662FD6D00E36691 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41C51AF2663F94700A9E391 /* MoodEntryModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryModal.swift; sourceTree = "<group>"; };
 		E43A9F9A2662FD6C00E36691 /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A9F9D2662FD6C00E36691 /* MoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackerApp.swift; sourceTree = "<group>"; };
 		E43A9F9F2662FD6C00E36691 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E43A9FB42663064700E36691 /* TabBarView.swift */,
+				E41C51AF2663F94700A9E391 /* MoodEntryModal.swift */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */,
 				E43A9FB72663177300E36691 /* colourExtension.swift in Sources */,
 				E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */,
+				E41C51B02663F94700A9E391 /* MoodEntryModal.swift in Sources */,
 				E43A9FCD2663408F00E36691 /* MoodEntryView.swift in Sources */,
 				E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */,
 				E43A9FB52663064700E36691 /* TabBarView.swift in Sources */,

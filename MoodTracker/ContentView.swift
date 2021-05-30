@@ -13,33 +13,38 @@ struct ContentView: View {
     }
     
     @State var selectedTab = 0
+    @State var shouldShowModal = false
     
     var body: some View {
-        VStack {
-            TabView(selection: $selectedTab) {
-                DiaryScreen()
-                    .tabItem {
-                        Image(systemName: "book.closed")
-                    }
-                    .tag(0)
-                Text("Overview Page")
-                    .tabItem {
-                        Image(systemName: "chart.pie")
-                    }
-                    .tag(1)
-                Text("Pixels Page")
-                    .tabItem {
-                        Image(systemName: "square.grid.3x3")
-                    }
-                    .tag(3)
-                Text("Settings Page")
-                    .tabItem {
-                        Image(systemName: "gearshape")
-                    }
-                    .tag(5)
+        ZStack {
+            VStack {
+                TabView(selection: $selectedTab) {
+                    DiaryScreen()
+                        .tabItem {
+                            Image(systemName: "book.closed")
+                        }
+                        .tag(0)
+                    Text("Overview Page")
+                        .tabItem {
+                            Image(systemName: "chart.pie")
+                        }
+                        .tag(1)
+                    Text("Pixels Page")
+                        .tabItem {
+                            Image(systemName: "square.grid.3x3")
+                        }
+                        .tag(3)
+                    Text("Settings Page")
+                        .tabItem {
+                            Image(systemName: "gearshape")
+                        }
+                        .tag(5)
+                }
+                
+                TabBarView(selectedTab: $selectedTab, shouldShowModal: $shouldShowModal)
             }
             
-            TabBarView(selectedTab: $selectedTab)
+            MoodEntryModal(shouldShowModal: $shouldShowModal)
         }
     }
 }
