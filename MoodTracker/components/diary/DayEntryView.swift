@@ -17,13 +17,16 @@ struct DayEntryView: View {
                 Text(formatDateText(dayEntry.date))
                 Spacer()
                 Image(systemName: "chevron.\(isCollapsed ? "up" : "down")")
+                    .onTapGesture { isCollapsed.toggle() }
                     .foregroundColor(.gray.opacity(0.5))
             }
             .font(.title)
             
-            ForEach(0..<dayEntry.moodEntries.count) { i in
-                MoodEntryView(moodEntry: dayEntry.moodEntries[i])
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .none, alignment: .leading)
+            if !isCollapsed {
+                ForEach(0..<dayEntry.moodEntries.count) { i in
+                    MoodEntryView(moodEntry: dayEntry.moodEntries[i])
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .none, alignment: .leading)
+                }
             }
         }
         .padding()
