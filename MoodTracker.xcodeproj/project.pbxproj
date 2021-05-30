@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E41C51B02663F94700A9E391 /* MoodEntryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41C51AF2663F94700A9E391 /* MoodEntryModal.swift */; };
+		E41C51B32664114400A9E391 /* MoodSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41C51B22664114400A9E391 /* MoodSelectorView.swift */; };
 		E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9F9D2662FD6C00E36691 /* MoodTrackerApp.swift */; };
 		E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9F9F2662FD6C00E36691 /* ContentView.swift */; };
 		E43A9FA22662FD6D00E36691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43A9FA12662FD6D00E36691 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E41C51AF2663F94700A9E391 /* MoodEntryModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryModal.swift; sourceTree = "<group>"; };
+		E41C51B22664114400A9E391 /* MoodSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectorView.swift; sourceTree = "<group>"; };
 		E43A9F9A2662FD6C00E36691 /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A9F9D2662FD6C00E36691 /* MoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackerApp.swift; sourceTree = "<group>"; };
 		E43A9F9F2662FD6C00E36691 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E41C51B12664112C00A9E391 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				E41C51B22664114400A9E391 /* MoodSelectorView.swift */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
 		E43A9F912662FD6C00E36691 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		E43A9FB22663061F00E36691 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				E41C51B12664112C00A9E391 /* modal */,
 				E43A9FB42663064700E36691 /* TabBarView.swift */,
 				E41C51AF2663F94700A9E391 /* MoodEntryModal.swift */,
 			);
@@ -201,6 +212,7 @@
 				E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */,
 				E41C51B02663F94700A9E391 /* MoodEntryModal.swift in Sources */,
 				E43A9FCD2663408F00E36691 /* MoodEntryView.swift in Sources */,
+				E41C51B32664114400A9E391 /* MoodSelectorView.swift in Sources */,
 				E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */,
 				E43A9FB52663064700E36691 /* TabBarView.swift in Sources */,
 				E43A9FAA2662FD6D00E36691 /* MoodTracker.xcdatamodeld in Sources */,
