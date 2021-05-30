@@ -69,21 +69,7 @@ struct DiaryScreen: View {
                 ScrollView {
                     ForEach(dayEntries, id: \.self) { dayEntry in
                         // TODO: move to own component
-                        VStack {
-                            HStack {
-                                Text(formatDateText(dayEntry.date))
-                                Spacer()
-                                Image(systemName: "chevron.up")
-                                    .foregroundColor(.gray.opacity(0.5))
-                            }
-                            .font(.title)
-                        }
-                        .padding()
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
-                        .padding(.all, 1)
-                        .shadow(radius: 2)
+                        DayEntryView(dayEntry: dayEntry)
                     }
                 }
                 .padding([.leading, .trailing], 10)
@@ -91,11 +77,6 @@ struct DiaryScreen: View {
             .navigationTitle("Diary")
             .background(Color(red: 0.98, green: 0.98, blue: 0.98))
         }
-    }
-    
-    private func formatDateText(_ date: Date) -> String {
-        
-        return "Today?"
     }
 }
 
