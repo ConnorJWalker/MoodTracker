@@ -13,6 +13,7 @@
 		E43A9FA52662FD6D00E36691 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43A9FA42662FD6D00E36691 /* Preview Assets.xcassets */; };
 		E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FA62662FD6D00E36691 /* Persistence.swift */; };
 		E43A9FAA2662FD6D00E36691 /* MoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FA82662FD6D00E36691 /* MoodTracker.xcdatamodeld */; };
+		E43A9FB52663064700E36691 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB42663064700E36691 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E43A9FA62662FD6D00E36691 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E43A9FA92662FD6D00E36691 /* MoodTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodTracker.xcdatamodel; sourceTree = "<group>"; };
 		E43A9FAB2662FD6D00E36691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43A9FB42663064700E36691 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E43A9F9C2662FD6C00E36691 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E43A9FB12663061300E36691 /* components */,
 				E43A9F9D2662FD6C00E36691 /* MoodTrackerApp.swift */,
 				E43A9F9F2662FD6C00E36691 /* ContentView.swift */,
 				E43A9FA12662FD6D00E36691 /* Assets.xcassets */,
@@ -73,6 +76,22 @@
 				E43A9FA42662FD6D00E36691 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E43A9FB12663061300E36691 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E43A9FB22663061F00E36691 /* shared */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		E43A9FB22663061F00E36691 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				E43A9FB42663064700E36691 /* TabBarView.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +166,7 @@
 				E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */,
 				E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */,
 				E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */,
+				E43A9FB52663064700E36691 /* TabBarView.swift in Sources */,
 				E43A9FAA2662FD6D00E36691 /* MoodTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
