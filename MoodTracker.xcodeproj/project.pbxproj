@@ -17,6 +17,7 @@
 		E43A9FB72663177300E36691 /* colourExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB62663177300E36691 /* colourExtension.swift */; };
 		E43A9FBA266318C500E36691 /* DiaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FB9266318C500E36691 /* DiaryScreen.swift */; };
 		E43A9FBD266329EC00E36691 /* DayEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FBC266329EC00E36691 /* DayEntryView.swift */; };
+		E43A9FCD2663408F00E36691 /* MoodEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A9FCC2663408F00E36691 /* MoodEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E43A9FB62663177300E36691 /* colourExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colourExtension.swift; sourceTree = "<group>"; };
 		E43A9FB9266318C500E36691 /* DiaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryScreen.swift; sourceTree = "<group>"; };
 		E43A9FBC266329EC00E36691 /* DayEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEntryView.swift; sourceTree = "<group>"; };
+		E43A9FCC2663408F00E36691 /* MoodEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E43A9FBC266329EC00E36691 /* DayEntryView.swift */,
+				E43A9FCC2663408F00E36691 /* MoodEntryView.swift */,
 			);
 			path = diary;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				E43A9FA72662FD6D00E36691 /* Persistence.swift in Sources */,
 				E43A9FB72663177300E36691 /* colourExtension.swift in Sources */,
 				E43A9FA02662FD6C00E36691 /* ContentView.swift in Sources */,
+				E43A9FCD2663408F00E36691 /* MoodEntryView.swift in Sources */,
 				E43A9F9E2662FD6C00E36691 /* MoodTrackerApp.swift in Sources */,
 				E43A9FB52663064700E36691 /* TabBarView.swift in Sources */,
 				E43A9FAA2662FD6D00E36691 /* MoodTracker.xcdatamodeld in Sources */,

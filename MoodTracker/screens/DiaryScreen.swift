@@ -68,7 +68,6 @@ struct DiaryScreen: View {
                 // TODO: add filter dropdown here
                 ScrollView {
                     ForEach(dayEntries, id: \.self) { dayEntry in
-                        // TODO: move to own component
                         DayEntryView(dayEntry: dayEntry)
                     }
                 }

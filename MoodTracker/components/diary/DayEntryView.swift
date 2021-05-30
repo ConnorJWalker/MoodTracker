@@ -20,6 +20,11 @@ struct DayEntryView: View {
                     .foregroundColor(.gray.opacity(0.5))
             }
             .font(.title)
+            
+            ForEach(0..<dayEntry.moodEntries.count) { i in
+                MoodEntryView(moodEntry: dayEntry.moodEntries[i])
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .none, alignment: .leading)
+            }
         }
         .padding()
         .background(Color.white)
